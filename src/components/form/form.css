@@ -1,0 +1,69 @@
+#contactForm {
+    position: absolute; 
+    width: 45vw;
+    top: 23%;
+    left: 10%;
+  } @media only screen and (max-width: 900px) {
+    #contactForm {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      margin-top: 70vw;
+    }
+  }
+  
+  label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+    font-family: "Contrail One";
+    padding: 4px;
+  }
+  
+  input, textarea {
+    display: block;
+    font-size:0.9em;
+    border:none;
+    color: #ffffff;
+    font-family: "Contrail One";
+    letter-spacing:2px;
+    padding: 4px;
+    width: 40vw;
+  } 
+  
+  
+  #name, #email {
+    height: 5vh;
+    font-size:0.9em;
+    border-radius: 10px;
+    background-color: #448ccb;
+    color: #ffffff;
+    font-family: "Contrail One"
+  }
+  
+  
+  #message {
+    height: 30vh;
+    font-size:0.9em;
+    border-radius: 15px;
+    background-color: #448ccb;
+    border: none;
+    color: #ffffff;
+    font-family: "Contrail One";
+    resize: none;
+     
+  }
+  
+  #submit {
+    width:127px;
+    height:38px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+    border-radius: 15px;
+    background-color: #fa274a;
+    color: #ffffff; 
+    font-family: "Contrail One"
+  } #submit:hover {
+    opacity:.7;
+  }

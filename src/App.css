@@ -1,0 +1,420 @@
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: #28292b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#app {
+  height: 2000px;
+}
+
+/*LAYER 1 AUSTIN FORTSON*/
+#layer1 {
+  position: relative;
+  background-color: #28292b;
+  width: 100%;
+  height: 105vh;
+  margin-bottom: 0;
+}
+
+#austinfortson {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: middle;
+  place-items: center;
+  height: 100vh;
+  font-size: 9vw;
+  font-family: "Pacifico";
+  font-weight: bold; 
+  color: white;
+  transform: rotate(-15deg);
+}
+
+/*LAYER 2 FULL STACK DEVELOPER*/
+#layer2 {
+  position: relative;
+  background-color: #2bb2dc;
+  width: 100%;
+  height: 105vh;
+  margin-bottom: 0;
+}
+
+#full {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 0;
+  top: 80%;
+  font-family: "bungee outline";
+  font-size: 10vw;
+  font-weight: bold;
+} @media only screen and (max-width: 900px) {
+  #full {
+    right: 0%;
+    left: 0%;
+    text-align: center;
+  }
+}
+
+#stack {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 0%;
+  top: 120%;
+  font-family: "bungee outline";
+  font-size: 10vw;
+  font-weight: bold;
+} @media only screen and (max-width: 900px) {
+  #stack {
+    right: 0%;
+    left: 0%;
+    text-align: center;
+  }
+}
+
+#developer {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 0%;
+  top: 160%;
+  font-family: "bungee outline";
+  font-size: 10vw;
+  font-weight: bold;
+} @media only screen and (max-width: 900px) {
+  #developer {
+    right: 0%;
+    left: 0%;
+    text-align: center;
+  }
+}
+
+#laptop {
+  position: absolute;
+  top: 75%;
+} @media only screen and (max-width: 900px) {
+  #laptop {
+    display: none;
+  }
+}
+
+/*LAYER 3 ABOUT ME*/
+#layer3 {
+  position: relative;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 105vh;
+  margin-bottom: 0;
+}
+
+#aboutMe{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  right: 70%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: "Libre Barcode 128 Text";
+  font-size: 13vw;
+  background-color: #e3e3e3;
+} @media only screen and (max-width: 900px) {
+  #aboutMe {
+    display: none;
+  }
+}
+
+#aboutMeAlt {
+  display: none;
+} @media only screen and (max-width: 900px) {
+  #aboutMeAlt {
+    display: contents;
+    font-family: "Libre Barcode 128 Text";
+    font-size: 13vw;
+    background-color: #e3e3e3;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+#bio {
+  position: absolute;
+  top: 80vh;
+  right: -100vw;
+  left: 0;
+  text-align: right;
+  font-family: "Righteous";
+  font-size: 2.5vw;
+} @media only screen and (max-width: 900px) {
+  #bio {
+    display: none;
+  }
+}
+
+#bioAlt{
+  display: none;
+} @media only screen and (max-width: 900px) {
+  #bioAlt {
+    position: static;
+    display: block;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 4vw;
+  }
+}
+
+#bio2 {
+  position: absolute;
+  top: 100vh;
+  right: -70vw;
+  left: 0;
+  text-align: right;
+  font-family: "Francois One";
+  font-size: 2vw;
+} @media only screen and (max-width: 900px) {
+  #bio2 {
+    display: none;
+  }
+}
+
+#bio2Alt{
+  display: none;
+} @media only screen and (max-width: 900px) {
+  #bio2Alt {
+    position: static;
+    display: block;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 4vw;
+  }
+}
+
+#bio3 {
+  top: 120vh;
+  position: absolute;
+  right: -70vw;
+  left: 0;
+  text-align: right;
+  font-family: "Archivo Black";
+  font-size: 1.5vw;
+  display: inline;
+} @media only screen and (max-width: 900px) {
+  #bio3 {
+    display: none;
+  }
+}
+
+#bio3Alt{
+  display: none;
+} @media only screen and (max-width: 900px) {
+  #bio3Alt {
+    position: static;
+    display: block;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 4vw;
+  }
+}
+
+#redhighlight {
+  color: #ff0000;
+  display: inline;
+}
+
+/*Layer 4 PORTFOLIO*/
+#layer4 {
+  position: relative;
+  background-color: #a55a9d;
+  width: 100%;
+  height: 150vh;
+  top: 0; 
+  margin-bottom: 0;
+}
+
+#portfolioHeader {
+  font-family: "Abril Fatface";
+  font-size: 15vw;
+  position: absolute;
+  top: 200vh;
+  text-align: center;
+  left: 0;
+  right: 0;
+} @media only screen and (max-width: 900px) {
+  #portfolioHeader {
+    margin-top: 150px;
+  }
+}
+
+#orangehighlight {
+  color: #ffa500;
+  display: grid;
+  display: inline;
+}
+
+#worksContainer {
+  position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+  top: 270vh;
+  padding-left: 50px;
+}
+
+
+/*LAYER 5 CONTACT*/
+#layer5 {
+  position: relative;
+  background-color: #28292b;
+  width: 100%;
+  height: 250vh;
+  top: 0; 
+  margin-bottom: 0;
+}
+
+#contactMe {
+  position: absolute;
+  right: 0;
+  top: 200vh;
+  writing-mode: vertical-rl;
+  font-family: "Contrail One";
+  font-size: 40vh;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  color: white;
+} @media only screen and (max-width: 900px) {
+  #contactMe {
+    writing-mode: initial;
+    font-size: 15vw;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+}
+
+#phoneDiv {
+  position: absolute;
+  top: 370vh;
+} @media only screen and (max-width: 900px) {
+  #phoneDiv {
+    margin-top: 40vh;
+  }
+}
+
+
+#phone {
+  width: 50%;
+} #phone:hover {
+  animation: shake 0.5s; 
+  animation-iteration-count: 3sec; 
+} @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+} @media only screen and (max-width: 900px) {
+  #phone {
+    display: none
+  }
+}
+
+#phoneAlt {
+  display: none;
+} @media only screen and (max-width: 900px) {
+  #phoneAlt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+  }
+}
+
+#linkedIn {
+  width: 7vw;
+  position: absolute;
+  top: 58%;
+  left: 27%;
+  cursor: pointer;
+} #linkedIn:hover {
+  opacity: 0.6;
+} @media only screen and (max-width: 900px) {
+  #linkedIn {
+    display: inline-block;
+    top: 100vw;
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+
+#gitHub {
+  width: 7vw;
+  position: absolute;
+  top: 58%;
+  left: 37%;
+  cursor: pointer;
+} #gitHub:hover {
+  opacity: 0.6;
+} @media only screen and (max-width: 900px) {
+  #gitHub {
+    display: inline-block;
+    top: 100vw;
+    right: 0;
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+
+
+#phoneDiv2 {
+  position: absolute;
+  top: 100vh; 
+}
+
+#phone2 {
+  width: 70%;
+  transform: rotate(90deg)
+} @media only screen and (max-width: 900px) {
+  #phone2 {
+    display: none;
+  }
+}
+
+#backToTop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 30px;
+  font-family: 'Alfa Slab One';
+  color: #ffffff;
+  font-size: 3vw;
+  cursor: pointer;
+} #backToTop:hover {
+  opacity: .7;
+} @media only screen and (max-width: 900px) {
+  #backToTop {
+    margin-top: 100vh;
+  }
+}

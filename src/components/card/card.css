@@ -1,0 +1,86 @@
+.card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+.innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .innerCard {
+    transform: rotateY(180deg);
+}
+
+.frontCard, .backCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+.frontCard {
+    font-family: "Abril Fatface";
+    background-color: #ffa500;
+    color: #000000;
+}
+
+#image {
+    height: 210px;
+    width: 300px;
+}
+
+.backCard {
+    background-color: #eef6ff;
+    color: #000000;
+    transform: rotateY(180deg);
+  }
+
+#backTitle{
+    font-family: "Abril Fatface";
+    border-bottom-color: #ffa500;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+
+}
+
+#description {
+    padding: 20px;
+}
+
+.buttons {
+    display: inline;
+}
+
+#code {
+    display: inline;
+    background-color: #000000;
+    color: #ffa500;
+    padding: 20px;
+    cursor: pointer;
+    margin-right: 10%;
+    border-radius: 25px;
+} #code:hover {
+    opacity: 0.7;
+}
+
+#demo {
+    display: inline;
+    background-color: #000000;
+    color: #ffa500;
+    padding: 20px;
+    cursor: pointer;
+    margin-left: 10%;
+    border-radius: 25px;
+} #demo:hover {
+    opacity: 0.7;
+}

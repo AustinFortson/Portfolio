@@ -1,0 +1,17 @@
+#appBar {
+    background-color: #28292b;
+}
+
+#appBarHeader {
+    color: #ffffff;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#appBarButtons {
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    margin-left: 5px;
+}
