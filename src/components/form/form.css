@@ -55,6 +55,7 @@
   }
   
   #submit {
+    display: inline-block;
     width:127px;
     height:38px;
     border:none;
