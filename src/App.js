@@ -1,9 +1,17 @@
 import React from 'react';
 import './App.css';
+import ResturantIMG from './images/resturantAppImg.jpg';
+import HTMLEmailIMG from './images/HTMLEmailImg.jpg';
+import StreetsIMG from './images/StreetsIMG.jpg';
+import Phone1 from './images/Phone1.png';
+import PhoneAlt from './images/phoneAlt.png';
+import Phone2 from './images/Phone2.png';
+import WhiteLinkedIn from './images/LinkedInIMGWhite.png';
+import WhiteGitHub from './images/GitHubIMGWhite.png';
+import ButtonAppBar from "./components/appbar/appbar";
+import Card from './components/card/card';
+import Form from './components/form/form';
 
-import ButtonAppBar from "./components/appbar/appbar"
-import Card from './components/card/card'
-import Form from './components/form/form'
 
 
 function App() {
@@ -76,11 +84,11 @@ function App() {
         </div>
 
         <div id="bio3" class="scroll" data-rateY="-1" data-rateX="-2" data-direction="hoizontal">
-          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
+          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
         </div> 
         {/*DISPLAYS ON LESS THAN 800PX*/}
         <div id="bio3Alt">
-          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
+          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
         </div> 
 
       </div>
@@ -97,14 +105,14 @@ function App() {
     
       <div className="container" id="worksContainer" class="scroll" data-rate="-2" data-direction="vertical">
 
+        {/*Music Discovery App*/}
+        <Card image={StreetsIMG} title="Music Discovery App" name="Streets" technologies="React, Material UI, React-Router, API's" description="An app designed to find local musicians in any city using Soundcloud's API, find local shows using LiveNation's API, and keep up to date with new releases through Spotify's API" codeLink="https://github.com/AustinFortson/Streets-app" demoLink="https://streets.netlify.com/#/"></Card>  
+
         {/*RESTURANT CARD*/}
-        <Card image="https://cdn.britannica.com/s:300x300/77/170477-004-B774BDDF.jpg" title="Resturant Website" technologies="React, CSS, Materialize" description="A website for a resturant showcasing the establishment, it's menu, and operation info."></Card>
+        <Card image={ResturantIMG} title="Resturant Website" name="Seaside Seafood" technologies="React, Materialize, CSS Animations & Media Queries" description="A single page website for a restaurant showcasing about them, a menu, operation hours and contact information" codeLink="https://github.com/AustinFortson/restaurant-app" demoLink="https://seasideseafood.netlify.com/"></Card>
 
         {/*HTML EMAIL CARD*/}
-        <Card image="https://cms-assets.tutsplus.com/uploads/users/30/posts/9386/final_image/preview.jpg" title="HTML EMAIL" technologies="HTML, CSS, Photoshop" description="A promotional HTML Email for a clothing brand"></Card>
-  
-        {/*Coming Soon*/}
-        <Card image="https://halffullmarketing.site/wp-content/uploads/2017/07/coming-soon.png" title="Coming Soon" technologies="Unavaliable" description="Unavaliable"></Card>        
+        <Card image={HTMLEmailIMG} title="HTML Email" name="Corner Store Clothing Brand" technologies="HTML, Inline-CSS, Photoshop, PutsMail" description="A promotional HTML Email tested with PutMail for previewing across 50+ different platforms and devices." codeLink="https://github.com/AustinFortson/HTML-Email" demoLink="https://austinfortson.github.io/HTML-Email/"></Card>   
 
         {/*Coming Soon*/}
         <Card image="https://halffullmarketing.site/wp-content/uploads/2017/07/coming-soon.png" title="Coming Soon" technologies="Unavaliable" description="Unavliable"></Card>
@@ -118,23 +126,22 @@ function App() {
         <div id="contactMe" class="scroll" data-rate="-1" data-direction="vertical">Contact Me</div>
 
         <div class="scroll" data-rate="-2" data-direction="vertical" id="phoneDiv">
-          <img src="https://mail.google.com/mail/u/0?ui=2&ik=744a95a85f&attid=0.2&permmsgid=msg-a:r-3961478655416566239&th=16bddadfd2b06eaf&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8WV-Sv9McJRkPAkDPTPBxPQaoOyx3K_1fMKcNT47F_CfdiD1vEys-0vTmtgxysmtTVhG9uM3RAWMUe1GmtB8opewzW9JcULZx_d7QugIhyTP2KhhvrRHqFXns&disp=emb&realattid=ii_jxxq5zo71" alt="none" id="phone"/>
+          <img src={Phone1} alt="" id="phone"/>
 
-          <a href="https://www.linkedin.com/in/austin-fortson-916b17170" target="_blank"><img src="https://image.flaticon.com/icons/png/512/34/34227.png" alt="LinkedIn" id="linkedIn"/></a>
+          <a href="https://www.linkedin.com/in/austin-fortson-916b17170" target="_blank" rel="noopener noreferrer"><img src={WhiteLinkedIn} alt="LinkedIn" id="linkedIn"/></a>
 
-          <a href="https://github.com/AustinFortson" target="_blank">
-          <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github" id="gitHub"/></a>
+          <a href="https://github.com/AustinFortson" target="_blank" rel="noopener noreferrer">
+          <img src={WhiteGitHub} alt="github" id="gitHub"/></a>
 
-          <img src="https://mail.google.com/mail/u/0?ui=2&ik=744a95a85f&attid=0.1&permmsgid=msg-a:r-3961478655416566239&th=16bddadfd2b06eaf&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_zWYxaEFRugfG7Mas7CQUem6EzGXNfNf6Ba5hEX-uc7zSZyFqJAHeWhybh1tbPBx0mll6ag-Qt9DPCOlscVsD7Bne-K0GLX3IraRt3iAw0_uRZwXEQVraELLk&disp=emb&realattid=ii_jxxq5znm0" alt="none" id="phoneAlt"/>
+          <img src={PhoneAlt} alt="" id="phoneAlt"/>
           </div>
 
         <div id="phoneDiv2">
-          <img src="https://mail.google.com/mail/u/0?ui=2&ik=744a95a85f&attid=0.3&permmsgid=msg-a:r-3961478655416566239&th=16bddadfd2b06eaf&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_LZY6UNwNdmOs0lFJqkDiEIbL0LHAmPr-7sFjv6ywd3nViKc1bfV3x314Oa8AECqA-1AwQ043O-O4BNBvGUfCIdA0V7bEFco-kT-_YGP1IZW05sTTHmKSoRsM&disp=emb&realattid=ii_jxxq63mu2" alt="none" id="phone2"/>
+          <img src={Phone2} alt="" id="phone2"/>
 
+        {/*Contact Form*/}
+        <Form/>
 
-        <Form>
-
-        </Form>
         </div>
 
 

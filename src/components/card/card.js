@@ -17,7 +17,7 @@ class Card extends React.Component {
         </div>
       <div className="backCard">
       <Grid item xs={12}>
-        <h1 id="backTitle">{this.props.title}</h1>
+        <h1 id="backTitle">{this.props.name}</h1>
         </Grid>
       <Grid item xs={12}>
         <h3 id="technologies">{this.props.technologies}</h3>
@@ -27,8 +27,8 @@ class Card extends React.Component {
         </Grid>
       <Grid item xs={12}>
         <div className="buttons">
-        <p id="code" href={this.props.codeLink}>Code</p>
-        <p id="demo" href={this.props.demoLink}>Demo</p>
+        <a id="code" href={this.props.codeLink} target="_blank" rel="noopener noreferrer">Code</a>
+        <a id="demo" href={this.props.demoLink} target="_blank" rel="noopener noreferrer">Demo</a>
         </div>
       </Grid>
       </div>
