@@ -15,10 +15,11 @@ import Form from './components/form/form';
 
 
 function App() {
-  return ( 
-    
+  return (
+    /*App Div*/
     <div className="App" id="app">
-      {/*APP BAR*/}
+
+      {/*Nav BAR*/}
       <div>
       <ButtonAppBar id="buttonAppBar"/>
       </div>
@@ -27,45 +28,32 @@ function App() {
       {/*AUSTIN FORTSON*/}
           {/*Layer 1*/}
       <div id="layer1">
-
           <ul id="austinfortson">
             <li class="scroll" data-rateY="-2" data-rateX="-2" data-direction="hoizontal">Austin</li>
             <li class="scroll" data-rateY="-2" data-rateX="2" data-direction="horizontal">Fortson</li>
           </ul>
-
       </div>
 
       {/*FULL STACK DEVELOPER*/}
             {/*Layer 2*/}
       <div id="layer2" class="scroll" data-rate="-2" data-direction="vertical">
-
           <img src="http://volunteeralberta.ab.ca/wp-content/uploads/2016/08/Laptop-cartoon.png" alt="none" id="laptop" class="scroll" data-rate="-2" data-direction="vertical"/> 
 
-
           <h3 class="scroll" data-rate="-3" data-direction="vertical" id="full">Full</h3>
-
-
           <h3 class="scroll" data-rate="-3" data-direction="vertical" id="stack">Stack</h3>
-
           <h3 class="scroll" data-rate="-3" data-direction="vertical" id="developer">Developer</h3>
-
       </div>
 
       {/*ABOUT ME*/}
       {/*Layer 3*/}
       <div id="layer3" class="scroll" data-rate="-2" data-direction="vertical">
-
         <div id="aboutMe">
           <h3>About Me</h3>
         </div> 
-
         {/*DISPLAYS ON LESS THAN 800PX*/}
-
         <div id="aboutMeAlt">
           <h3>About Me</h3>
-        </div> 
-
-
+        </div>
 
         <div id="bio" class="scroll" data-rateY="-1" data-rateX="-3" data-direction="hoizontal">
           <p>I'm Austin Fortson, a Full Stack Developer From Charlotte NC</p>
@@ -89,34 +77,54 @@ function App() {
         {/*DISPLAYS ON LESS THAN 800PX*/}
         <div id="bio3Alt">
           <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
-        </div> 
-
+        </div>
       </div>
       
       {/*PORTFOLIO*/}
        {/*LAYER 4*/}
       <div id="layer4" class="scroll" data-rate="-2" data-direction="vertical">
         {/*PORTFOLIO TITLE*/}
-
         <h1 id="portfolioHeader" class="scroll" data-rate="-2" data-direction="vertical">Portfolio<span id="orangehighlight">.</span></h1>
 
-
-      {/*PORTFOLIO CONTENT*/}
-    
+      {/*PORTFOLIO CONTENT*/}    
       <div className="container" id="worksContainer" class="scroll" data-rate="-2" data-direction="vertical">
 
         {/*Music Discovery App*/}
-        <Card image={StreetsIMG} title="Music Discovery App" name="Streets" technologies="React, Material UI, React-Router, API's" description="An app designed to find local musicians in any city using Soundcloud's API, find local shows using LiveNation's API, and keep up to date with new releases through Spotify's API" codeLink="https://github.com/AustinFortson/Streets-app" demoLink="https://streets.netlify.com/#/"></Card>  
+        <Card image={StreetsIMG} 
+              title="Music Discovery App"
+              name="Streets" 
+              technologies="React, Material UI, React-Router-Dom, Multiple API's" 
+              description="An app designed to find local musicians in any city using Soundcloud's API, find local shows using Ticketmaster's API, and keep up to date with new releases through Spotify's API"
+              codeLink="https://github.com/AustinFortson/Streets-app" 
+              demoLink="https://streets.netlify.com/#/">
+          </Card>  
 
         {/*RESTURANT CARD*/}
-        <Card image={ResturantIMG} title="Resturant Website" name="Seaside Seafood" technologies="React, Materialize, CSS Animations & Media Queries" description="A single page website for a restaurant showcasing about them, a menu, operation hours and contact information" codeLink="https://github.com/AustinFortson/restaurant-app" demoLink="https://seasideseafood.netlify.com/"></Card>
+        <Card image={ResturantIMG} 
+              title="Resturant Website" 
+              name="Seaside Seafood" 
+              technologies="React, Materialize, CSS Animations & Media Queries" 
+              description="A single page website for a restaurant showcasing about them, a menu, operation hours and contact information" 
+              codeLink="https://github.com/AustinFortson/restaurant-app" 
+              demoLink="https://seasideseafood.netlify.com/">
+          </Card>
 
         {/*HTML EMAIL CARD*/}
-        <Card image={HTMLEmailIMG} title="HTML Email" name="Corner Store Clothing Brand" technologies="HTML, Inline-CSS, Photoshop, PutsMail" description="A promotional HTML Email tested with PutMail for previewing across 50+ different platforms and devices." codeLink="https://github.com/AustinFortson/HTML-Email" demoLink="https://austinfortson.github.io/HTML-Email/"></Card>   
+        <Card image={HTMLEmailIMG} 
+              title="HTML Email" 
+              name="Corner Store Clothing Brand" 
+              technologies="HTML, Inline-CSS, Photoshop, PutsMail" 
+              description="A promotional HTML Email tested with PutMail for previewing across 50+ different platforms and devices." 
+              codeLink="https://github.com/AustinFortson/HTML-Email" 
+              demoLink="https://austinfortson.github.io/HTML-Email/">
+          </Card>   
 
         {/*Coming Soon*/}
-        <Card image="https://halffullmarketing.site/wp-content/uploads/2017/07/coming-soon.png" title="Coming Soon" technologies="Unavaliable" description="Unavliable"></Card>
-
+        <Card image="https://halffullmarketing.site/wp-content/uploads/2017/07/coming-soon.png" 
+              title="Coming Soon" 
+              technologies="Unavaliable" 
+              description="Unavliable">
+          </Card>
       </div>
       </div>
 
@@ -128,10 +136,17 @@ function App() {
         <div class="scroll" data-rate="-2" data-direction="vertical" id="phoneDiv">
           <img src={Phone1} alt="" id="phone"/>
 
-          <a href="https://www.linkedin.com/in/austin-fortson-916b17170" target="_blank" rel="noopener noreferrer"><img src={WhiteLinkedIn} alt="LinkedIn" id="linkedIn"/></a>
+          <a href="https://www.linkedin.com/in/austin-fortson-916b17170" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              <img src={WhiteLinkedIn} alt="LinkedIn" id="linkedIn"/>
+            </a>
 
-          <a href="https://github.com/AustinFortson" target="_blank" rel="noopener noreferrer">
-          <img src={WhiteGitHub} alt="github" id="gitHub"/></a>
+          <a href="https://github.com/AustinFortson" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              <img src={WhiteGitHub} alt="github" id="gitHub"/>
+            </a>
 
           <img src={PhoneAlt} alt="" id="phoneAlt"/>
           </div>
@@ -139,22 +154,24 @@ function App() {
         <div id="phoneDiv2">
           <img src={Phone2} alt="" id="phone2"/>
 
+        {/*DISPLAYS ON LESS THAN 900PX*/}
+        <img src={Phone2} alt="" id="phone2Alt"/>
+         
+
         {/*Contact Form*/}
         <Form/>
-
         </div>
 
+        {/*Back To Top Button*/}
+        <h3 id="backToTop" href="#layer1" onClick={topFunction}>Back To The Top</h3>
+      </div>  
 
-          <h3 id="backToTop" href="#layer1" onClick={topFunction}>Back To The Top</h3>
-
-      </div>
-
-      
+      {/*End of Render*/}    
     </div>
   );
 }
 
-{/*PARALLAX SCROLLING LOGIC*/}
+/*PARALLAX SCROLLING LOGIC*/
 window.addEventListener("scroll", function(e) {
 
   const target = document.querySelectorAll(".scroll");
@@ -175,6 +192,7 @@ window.addEventListener("scroll", function(e) {
 
 })
 
+/*Back To Top Function*/
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;

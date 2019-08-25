@@ -6,9 +6,9 @@
   } @media only screen and (max-width: 900px) {
     #contactForm {
       display: block;
-      margin: 0 auto;
       width: 100%;
       margin-top: 70vw;
+      left: 30vw;
     }
   }
   
@@ -18,6 +18,10 @@
     letter-spacing:2px;
     font-family: "Contrail One";
     padding: 4px;
+  } @media only screen and (max-width: 900px) {
+    label {
+      margin-top: 0px;
+    }
   }
   
   input, textarea {
