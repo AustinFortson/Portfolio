@@ -6,6 +6,7 @@ class Form extends React.Component {
     return (
         <div>
         <form name="contact" id="contactForm" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <label>Name</label>
         <input name="name" type="text" id="name"  placeholder="Enter Your Name Here"></input>
 
