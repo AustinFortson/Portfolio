@@ -2,13 +2,18 @@
 <html lang="en" style="height: 0xp;">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"/>
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <!--Google Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Bungee Outline|Libre Barcode 128 Text|Kumar One Outline|Righteous|Francois One|Archivo Black|Abril Fatface|Markazi Text|Contrail One|Russo One|Alfa Slab One|">
-           
+
+    <!--Rellax.js-->
+    <script src="rellax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+    
 
     <title>Austin Fortson</title>
   </head>
@@ -22,10 +27,14 @@
     </form>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root" style="height: 0px;"></div>
+    <div id="root"></div>
 
     
 
   </body>
+  <!--Rellax.js Variable-->
+  <script>
+  var rellax = new Rellax('.rellax');
+  </script>
 </html>
 

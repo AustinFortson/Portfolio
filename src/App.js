@@ -3,6 +3,7 @@ import './App.css';
 import ResturantIMG from './images/resturantAppImg.jpg';
 import HTMLEmailIMG from './images/HTMLEmailImg.jpg';
 import StreetsIMG from './images/StreetsIMG.jpg';
+import Laptop from './images/Laptop.png'
 import Phone1 from './images/Phone1.png';
 import PhoneAlt from './images/phoneAlt.png';
 import Phone2 from './images/Phone2.png';
@@ -11,85 +12,107 @@ import WhiteGitHub from './images/GitHubIMGWhite.png';
 import ButtonAppBar from "./components/appbar/appbar";
 import Card from './components/card/card';
 import Form from './components/form/form';
+import Grid from '@material-ui/core/Grid';
 
 
+function App() { 
 
-function App() {
   return (
     /*App Div*/
     <div className="App" id="app">
+      <React.Fragment>
 
       {/*Nav BAR*/}
-      <div>
+      
       <ButtonAppBar id="buttonAppBar"/>
-      </div>
 
 
       {/*AUSTIN FORTSON*/}
-          {/*Layer 1*/}
+      {/*Layer 1*/}
       <div id="layer1">
-          <ul id="austinfortson">
+        <Grid container>
+          <Grid item xs={12}>
+            <ul id="austinfortson">
             <li class="scroll" data-rateY="-2" data-rateX="-2" data-direction="hoizontal">Austin</li>
             <li class="scroll" data-rateY="-2" data-rateX="2" data-direction="horizontal">Fortson</li>
-          </ul>
+            </ul>
+          </Grid>
+        </Grid>
       </div>
 
       {/*FULL STACK DEVELOPER*/}
-            {/*Layer 2*/}
-      <div id="layer2" class="scroll" data-rate="-2" data-direction="vertical">
-          <img src="http://volunteeralberta.ab.ca/wp-content/uploads/2016/08/Laptop-cartoon.png" alt="none" id="laptop" class="scroll" data-rate="-2" data-direction="vertical"/> 
-
-          <h3 class="scroll" data-rate="-3" data-direction="vertical" id="full">Full</h3>
-          <h3 class="scroll" data-rate="-3" data-direction="vertical" id="stack">Stack</h3>
-          <h3 class="scroll" data-rate="-3" data-direction="vertical" id="developer">Developer</h3>
+      {/*Layer 2*/}
+      <div id="layer2">
+        <Grid container>
+          <img src={Laptop} alt="" id="laptop" />
+          <h3 id="full" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Full</h3>
+          <h3 id="stack" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Stack</h3>
+          <h3 id="developer" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Developer</h3>
+        </Grid>
       </div>
 
       {/*ABOUT ME*/}
       {/*Layer 3*/}
-      <div id="layer3" class="scroll" data-rate="-2" data-direction="vertical">
+      <div id="layer3">
+        <Grid container>
         <div id="aboutMe">
           <h3>About Me</h3>
+        </div>
+        
+        <div id="bio">
+          <p>I'm Austin Fortson, a Full Stack Developer From Charlotte NC</p>
+        </div>
+        
+        <div id="bio2">
+          <p>I Have Earned a Full Stack Web Development Certificate from UNCC</p>
+        </div>
+        
+        <div id="bio3">
+          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
         </div> 
+        </Grid>
+
         {/*DISPLAYS ON LESS THAN 800PX*/}
+        <Grid container>
         <div id="aboutMeAlt">
+          <Grid item xs={12}>
           <h3>About Me</h3>
+          </Grid>
         </div>
 
-        <div id="bio" class="scroll" data-rateY="-1" data-rateX="-3" data-direction="hoizontal">
-          <p>I'm Austin Fortson, a Full Stack Developer From Charlotte NC</p>
-        </div>
         {/*DISPLAYS ON LESS THAN 800PX*/}
-        <div id="bioAlt">
+        <div id="bioAlt" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
           <p>I'm Austin Fortson, a Full Stack Developer From Charlotte NC</p>
         </div>
 
-        <div id="bio2" class="scroll" data-rateY="-1" data-rateX="-2" data-direction="hoizontal">
-          <p>I Have Earned a Full Stack Web Development Certificate from UNCC</p>
-        </div>
         {/*DISPLAYS ON LESS THAN 800PX*/}
-        <div id="bio2Alt">
+        <div id="bio2Alt" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
           <p>I Have Earned a Full Stack Web Development Certificate from UNCC</p>
         </div>
 
-        <div id="bio3" class="scroll" data-rateY="-1" data-rateX="-2" data-direction="hoizontal">
-          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
-        </div> 
         {/*DISPLAYS ON LESS THAN 800PX*/}
-        <div id="bio3Alt">
+        <div id="bio3Alt" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
           <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
         </div>
+        </Grid>
       </div>
+      
       
       {/*PORTFOLIO*/}
        {/*LAYER 4*/}
-      <div id="layer4" class="scroll" data-rate="-2" data-direction="vertical">
+      <div id="layer4">
+        <Grid container>
         {/*PORTFOLIO TITLE*/}
-        <h1 id="portfolioHeader" class="scroll" data-rate="-2" data-direction="vertical">Portfolio<span id="orangehighlight">.</span></h1>
+        <Grid item xs={12}>
+        <h1 id="portfolioHeader" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.7">Portfolio<span id="orangehighlight">.</span></h1>
+        </Grid>
 
       {/*PORTFOLIO CONTENT*/}    
-      <div className="container" id="worksContainer" class="scroll" data-rate="-2" data-direction="vertical">
+      <div className="container" id="worksContainer" class="rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+        <Grid container spacing={3}>
 
         {/*Music Discovery App*/}
+        <Grid item xs>
         <Card image={StreetsIMG} 
               title="Music Discovery App"
               name="Streets" 
@@ -97,9 +120,11 @@ function App() {
               description="An app designed to find local musicians in any city using Soundcloud's API, find local shows using Ticketmaster's API, and keep up to date with new releases through Spotify's API"
               codeLink="https://github.com/AustinFortson/Streets-app" 
               demoLink="https://streets.netlify.com/#/">
-          </Card>  
+          </Card>
+          </Grid>  
 
         {/*RESTURANT CARD*/}
+        <Grid item xs>
         <Card image={ResturantIMG} 
               title="Resturant Website" 
               name="Seaside Seafood" 
@@ -108,8 +133,10 @@ function App() {
               codeLink="https://github.com/AustinFortson/restaurant-app" 
               demoLink="https://seasideseafood.netlify.com/">
           </Card>
+          </Grid>
 
         {/*HTML EMAIL CARD*/}
+        <Grid item xs>
         <Card image={HTMLEmailIMG} 
               title="HTML Email" 
               name="Corner Store Clothing Brand" 
@@ -118,22 +145,29 @@ function App() {
               codeLink="https://github.com/AustinFortson/HTML-Email" 
               demoLink="https://austinfortson.github.io/HTML-Email/">
           </Card>   
+          </Grid>
 
         {/*Coming Soon*/}
+        <Grid item xs>
         <Card image="https://halffullmarketing.site/wp-content/uploads/2017/07/coming-soon.png" 
               title="Coming Soon" 
               technologies="Unavaliable" 
               description="Unavliable">
           </Card>
+          </Grid>
+
+        </Grid>
       </div>
+      </Grid>
       </div>
 
       {/*CONTACT*/}
       {/*Layer 5*/}
-      <div id="layer5" class="scroll" data-rate="-2" data-direction="vertical">
-        <div id="contactMe" class="scroll" data-rate="-1" data-direction="vertical">Contact Me</div>
+      <div id="layer5">
+        <Grid container>
+        <div id="contactMe">Contact Me</div>
 
-        <div class="scroll" data-rate="-2" data-direction="vertical" id="phoneDiv">
+        <div id="phoneDiv">
           <img src={Phone1} alt="" id="phone"/>
 
           <a href="https://www.linkedin.com/in/austin-fortson-916b17170" 
@@ -160,18 +194,34 @@ function App() {
 
         {/*Contact Form*/}
         <Form/>
+
         </div>
+        </Grid>
+      </div>
 
-        {/*Back To Top Button*/}
-        <h3 id="backToTop" href="#layer1" onClick={topFunction}>Back To The Top</h3>
-      </div>  
+      {/*Back To Top Button*/}
+      {/*LAYER 6*/}
+      <div id="layer6">      
+      <Grid container>
+        <Grid item xs={12}>
+          <h3 id="backToTop" href="#layer1" onClick={topFunction}>Back To The Top</h3>
+        </Grid>
+      </Grid>
+      </div>
 
-      {/*End of Render*/}    
+      {/*End of Render*/}  
+      </React.Fragment>  
     </div>
   );
 }
 
-/*PARALLAX SCROLLING LOGIC*/
+/*Back To Top Function*/
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+/*Manual PARALLAX SCROLLING LOGIC*/
 window.addEventListener("scroll", function(e) {
 
   const target = document.querySelectorAll(".scroll");
@@ -191,11 +241,5 @@ window.addEventListener("scroll", function(e) {
   }
 
 })
-
-/*Back To Top Function*/
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
 export default App;

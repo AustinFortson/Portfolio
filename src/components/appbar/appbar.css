@@ -6,6 +6,10 @@
     color: #ffffff;
     flex-grow: 1;
     cursor: pointer;
+} @media only screen and (max-width: 450px) {
+    #appBarHeader {
+      display: none;
+    }
 }
 
 #appBarButtons {
@@ -14,4 +18,24 @@
     border-color: #ffffff;
     border-width: 2px;
     margin-left: 5px;
+    cursor: pointer;
+} @media only screen and (max-width: 534px) {
+    #appBarButtons {
+      font-size: 70%;
+      flex-grow: 1;
+    }
+}
+
+#appBarButtonsResume {
+    color: white;
+    border-style: solid;
+    border-color: #a55a9d;
+    border-width: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+} @media only screen and (max-width: 534px) {
+    #appBarButtonsResume {
+      font-size: 70%;
+      flex-grow: 1;
+    }
 }

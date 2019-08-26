@@ -6,37 +6,26 @@ import Button from '@material-ui/core/Button';
 import Resume from '../pdfs/Resume.pdf'
 import './appbar.css'
 
-function scrollAboutMe() {
-  window.scrollTo(0, 490);
-}
-
-function scrollPortfolio() {
-  window.scrollTo(0, 710);
-}
-
-function scrollContactMe() {
-  window.scrollTo(0, 1070);
-}
-
-function scrollName() {
-  window.scroll(0, 0);
-}
-
 
 function ButtonAppBar() {
 
+/*Back To Top Function*/
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
   return (
-    <div>
+    <div className="rootAppBar">
       <AppBar id="appBar">
         <Toolbar id="toolBar">
-          <Typography variant="h6" id="appBarHeader" onClick={scrollName}>
+          <Typography variant="h6" id="appBarHeader" onClick={topFunction}>
             Austin Fortson
           </Typography>
-          <Button id="appBarButtons" onClick={scrollAboutMe}>About Me</Button>
-          <Button id="appBarButtons" onClick={scrollPortfolio}>Portfolio</Button>
-          <Button id="appBarButtons" onClick={scrollContactMe}>Contact</Button>
-          <Button id="appBarButtons" href={Resume} target="_blank">Resume</Button>
+          <Button id="appBarButtons" href="#layer3">About Me</Button>
+          <Button id="appBarButtons" href="#layer4" >Portfolio</Button>
+          <Button id="appBarButtons" href="#layer5">Contact</Button>
+          <Button id="appBarButtonsResume" href={Resume} target="_blank">Resume</Button>
         </Toolbar>
       </AppBar>
     </div>
