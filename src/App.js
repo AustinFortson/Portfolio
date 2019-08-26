@@ -13,6 +13,7 @@ import ButtonAppBar from "./components/appbar/appbar";
 import Card from './components/card/card';
 import Form from './components/form/form';
 import Grid from '@material-ui/core/Grid';
+import SkillTable from './components/skilltable/skilltable';
 
 
 function App() { 
@@ -33,8 +34,8 @@ function App() {
         <Grid container>
           <Grid item xs={12}>
             <ul id="austinfortson">
-            <li class="scroll" data-rateY="-2" data-rateX="-2" data-direction="hoizontal">Austin</li>
-            <li class="scroll" data-rateY="-2" data-rateX="2" data-direction="horizontal">Fortson</li>
+            <li className="scroll" data-rateY="-2" data-rateX="-2" data-direction="hoizontal">Austin</li>
+            <li className="scroll" data-rateY="-2" data-rateX="2" data-direction="horizontal">Fortson</li>
             </ul>
           </Grid>
         </Grid>
@@ -45,9 +46,9 @@ function App() {
       <div id="layer2">
         <Grid container>
           <img src={Laptop} alt="" id="laptop" />
-          <h3 id="full" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Full</h3>
-          <h3 id="stack" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Stack</h3>
-          <h3 id="developer" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Developer</h3>
+          <h3 id="full" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Full</h3>
+          <h3 id="stack" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Stack</h3>
+          <h3 id="developer" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.4">Developer</h3>
         </Grid>
       </div>
 
@@ -59,16 +60,24 @@ function App() {
           <h3>About Me</h3>
         </div>
         
-        <div id="bio">
-          <p>I'm Austin Fortson, a Full Stack Developer From Charlotte NC</p>
+        <div id="bio" className="rellax" data-rellax-speed="2" data-rellax-percentage="1">
+          <p>I'm Austin Fortson, a developer passionate about <span id="bluehighlight">creating </span>
+          and <span id="bluehighlight">learning</span> new skills to do so from Charlotte NC</p>
         </div>
         
-        <div id="bio2">
-          <p>I Have Earned a Full Stack Web Development Certificate from UNCC</p>
+        <div id="bio2" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.9">
+          <p>Graduated from <span id="greenhighlight">UNCC</span> Coding Bootcamp</p>
         </div>
         
-        <div id="bio3">
-          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
+        <div id="bio3" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.7">
+          <SkillTable
+          header1={"Experienced In"}
+          header2={<span id="redhighlight">Front End</span>}   
+          header3={<span id="redhighlight">Back End</span>} 
+          header4={<span id="redhighlight">Source Control</span>}
+          header5={<span id="redhighlight">Frameworks & Libraries</span>}  
+          header6={<span id="redhighlight">Learn More</span>}    
+          />
         </div> 
         </Grid>
 
@@ -81,19 +90,31 @@ function App() {
         </div>
 
         {/*DISPLAYS ON LESS THAN 800PX*/}
-        <div id="bioAlt" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
-          <p>I'm Austin Fortson, a Full Stack Developer From Charlotte NC</p>
+        <Grid container>
+        <div id="bioAlt" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
+          <Grid item xs={12}>
+          <p>I'm Austin Fortson, a developer passionate about <span id="bluehighlight">creating </span> and <span id="bluehighlight">learning </span> new skills to do so from Charlotte NC</p>
+          </Grid>
         </div>
+        </Grid>
 
         {/*DISPLAYS ON LESS THAN 800PX*/}
-        <div id="bio2Alt" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
-          <p>I Have Earned a Full Stack Web Development Certificate from UNCC</p>
+        <Grid container>
+        <div id="bio2Alt" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
+          <Grid item xs={12}>
+          <p>Graduated from UNCC Coding Bootcamp</p>
+          </Grid>
         </div>
+        </Grid>
 
         {/*DISPLAYS ON LESS THAN 800PX*/}
-        <div id="bio3Alt" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
-          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">ReactJS</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
+        <Grid container>
+        <div id="bio3Alt" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.3">
+          <Grid item xs={12}>
+          <p>Experienced In <span id="redhighlight">HTML</span>, <span id="redhighlight">CSS</span>, <span id="redhighlight">Javascript</span>, <span id="redhighlight">JQuery</span>, <span id="redhighlight">React/Redux</span>, <span id="redhighlight">MongoDB</span>, <span id="redhighlight">MySql</span> And Able To <span id="redhighlight">Learn More</span></p>
+          </Grid>
         </div>
+        </Grid>
         </Grid>
       </div>
       
@@ -104,11 +125,11 @@ function App() {
         <Grid container>
         {/*PORTFOLIO TITLE*/}
         <Grid item xs={12}>
-        <h1 id="portfolioHeader" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.7">Portfolio<span id="orangehighlight">.</span></h1>
+        <h1 id="portfolioHeader" className="rellax" data-rellax-speed="2" data-rellax-percentage="0.7">Portfolio<span id="orangehighlight">.</span></h1>
         </Grid>
 
       {/*PORTFOLIO CONTENT*/}    
-      <div className="container" id="worksContainer" class="rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+      <div className="container" id="worksContainer" className="rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
         <Grid container spacing={3}>
 
         {/*Music Discovery App*/}

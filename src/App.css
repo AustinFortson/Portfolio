@@ -105,6 +105,8 @@ html {
   background-color: #f3f3f3;
   width: 100%;
   height: 105vh;
+  border-top: 2px solid #28292b;
+  border-bottom: 2px solid #28292b;
 } @media only screen and (max-width: 900px) {
   #layer3 {
     height: 100%;
@@ -123,6 +125,7 @@ html {
   font-family: "Libre Barcode 128 Text";
   font-size: 13vw;
   background-color: #e3e3e3;
+  border-left: 2px solid #28292b;
 } @media only screen and (max-width: 900px) {
   #aboutMe {
     display: none;
@@ -146,10 +149,14 @@ html {
 
 #bio {
   position: absolute;
-  right: 0;
-  text-align: right;
+  padding: 5px;
+  margin-left: 31%;
+  text-align: center;
   font-family: "Righteous";
   font-size: 2.5vw;
+  line-height: 1;
+  border-bottom: 2px solid #28292b;
+  border-top: 2px solid #28292b
 } @media only screen and (max-width: 900px) {
   #bio {
     display: none;
@@ -172,7 +179,9 @@ html {
 
 #bio2 {
   position: absolute;
-  top: 20vh;
+  top: 70vh;
+  margin: auto;
+  width: 80%;
   text-align: right;
   font-family: "Francois One";
   font-size: 2vw;
@@ -198,6 +207,7 @@ html {
 
 #bio3 {
   top: 40vh;
+  right: 0;
   position: absolute;
   text-align: right;
   font-family: "Archivo Black";
@@ -226,6 +236,16 @@ html {
 #redhighlight {
   color: #ff0000;
   display: inline;
+}
+
+#greenhighlight {
+  color: #004525f2;
+  display: inline;
+}
+
+#bluehighlight {
+  color: #3838ff;
+  display: inline
 }
 
 /*Layer 4 PORTFOLIO*/
