@@ -140,7 +140,7 @@ function App() {
               technologies="React, Material UI, React-Router-Dom, Multiple API's" 
               description="An app designed to find local musicians in any city using Soundcloud's API, find local shows using Ticketmaster's API, and keep up to date with new releases through Spotify's API"
               codeLink="https://github.com/AustinFortson/Streets-app" 
-              demoLink="https://streets.netlify.com/#/">
+              demoLink="https://streets-app.herokuapp.com">
           </Card>
           </Grid>  
 
