@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ResturantIMG from './images/resturantAppImg.jpg';
 import HTMLEmailIMG from './images/HTMLEmailImg.jpg';
+import sumertailoringIMG from './images/sumertailoringIMG.jpg';
 import StreetsIMG from './images/StreetsIMG.jpg';
 import Laptop from './images/Laptop.png'
 import Phone1 from './images/Phone1.png';
@@ -144,6 +145,30 @@ function App() {
           </Card>
           </Grid>  
 
+        {/*Sumer Tailoring Card*/}
+        <Grid item xs>
+        <Card image={sumertailoringIMG} 
+              title="Tailoring Store Website" 
+              name="Sumer Tailoring"
+              technologies="React, Material UI, Media Queries, CSS Animations" 
+              description="A single page website for a Tailoring company in Charlotte"
+              codeLink="https://github.com/AustinFortson/sumertailoring"
+              demoLink="https://sumertailoring.netlify.com/">
+          </Card>
+          </Grid>
+
+        {/*HTML EMAIL CARD*/}
+        <Grid item xs>
+        <Card image={HTMLEmailIMG} 
+              title="HTML Email" 
+              name="Corner Store Clothing Brand" 
+              technologies="HTML, Inline-CSS, Photoshop, PutsMail" 
+              description="A promotional HTML Email tested with PutMail for previewing across 50+ different platforms and devices" 
+              codeLink="https://github.com/AustinFortson/HTML-Email" 
+              demoLink="https://austinfortson.github.io/HTML-Email/">
+          </Card>   
+          </Grid>
+
         {/*RESTURANT CARD*/}
         <Grid item xs>
         <Card image={ResturantIMG} 
@@ -156,26 +181,6 @@ function App() {
           </Card>
           </Grid>
 
-        {/*HTML EMAIL CARD*/}
-        <Grid item xs>
-        <Card image={HTMLEmailIMG} 
-              title="HTML Email" 
-              name="Corner Store Clothing Brand" 
-              technologies="HTML, Inline-CSS, Photoshop, PutsMail" 
-              description="A promotional HTML Email tested with PutMail for previewing across 50+ different platforms and devices." 
-              codeLink="https://github.com/AustinFortson/HTML-Email" 
-              demoLink="https://austinfortson.github.io/HTML-Email/">
-          </Card>   
-          </Grid>
-
-        {/*Coming Soon*/}
-        <Grid item xs>
-        <Card image="https://halffullmarketing.site/wp-content/uploads/2017/07/coming-soon.png" 
-              title="Coming Soon" 
-              technologies="Unavaliable" 
-              description="Unavliable">
-          </Card>
-          </Grid>
 
         </Grid>
       </div>
