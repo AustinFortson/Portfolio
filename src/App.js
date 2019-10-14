@@ -4,6 +4,7 @@ import ResturantIMG from './images/resturantAppImg.jpg';
 import HTMLEmailIMG from './images/HTMLEmailImg.jpg';
 import sumertailoringIMG from './images/sumertailoringIMG.jpg';
 import StreetsIMG from './images/StreetsIMG.jpg';
+import HomeDepotRentalIMG from './images/HomeDepotRentalIMG.jpg';
 import Laptop from './images/Laptop.png'
 import Phone1 from './images/Phone1.png';
 import PhoneAlt from './images/phoneAlt.png';
@@ -142,6 +143,18 @@ function App() {
               description="An app designed to find local musicians in any city using Soundcloud's API, find local shows using Ticketmaster's API, and keep up to date with new releases through Spotify's API"
               codeLink="https://github.com/AustinFortson/Streets-app" 
               demoLink="https://streets-app.herokuapp.com">
+          </Card>
+          </Grid>  
+
+        {/*Home Depot Rental App*/}
+        <Grid item xs>
+        <Card image={HomeDepotRentalIMG} 
+              title="Home Depot Rental App"
+              name="Home Depot Rental" 
+              technologies="React, Redux, React-Bootstrap, React-Router, SCSS" 
+              description="An E-commerce type app to solve Home Depot's issue of only giving customers the ability to go into the store to secure a rental instead of being able to online as well."
+              codeLink="https://github.com/AustinFortson/homedepotrental" 
+              demoLink="https://homedepotrental.netlify.com/">
           </Card>
           </Grid>  
 
